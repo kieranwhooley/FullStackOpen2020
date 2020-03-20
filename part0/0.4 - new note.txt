@@ -1,0 +1,42 @@
+title part0 - 0.4 new note
+
+note over browser:
+on clicking submit browser sends
+new_note content in to 
+server in a POST request
+end note
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+
+note over server:
+server sends back 
+302 Redirect Status Code
+to reload the page on the browser
+end note
+
+server->browser: HTTP Code 302
+
+note over browser:
+page reloads and request for 
+HTML, CSS and JS sent to server
+end note
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server->browser: HTML-code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server->browser: main.css
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server->browser: main.js
+
+note over browser:
+browser starts executing js-code 
+that requires JSON data from the server
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server->browser: [{"content":"HTML is easy","date":"2019-05-23T17:30:31.098Z"},..]
+
+note over browser:
+browser executes the event handler 
+that renders notes to display
+which includes the new note that was submitted
+end note
+
