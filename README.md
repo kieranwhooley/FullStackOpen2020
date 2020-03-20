@@ -1,6 +1,6 @@
 # FullStackOpen2020
 
-This is a repo containing code samples from **_Full stack open 2020_** course offered by The University of Helsinki.
+This is a repo containing exercises from the **_Full stack open 2020_** course offered by The University of Helsinki.
 
 Here is a link to the course:
 
