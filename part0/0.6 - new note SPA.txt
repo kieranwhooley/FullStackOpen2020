@@ -1,0 +1,16 @@
+title part0 - 0.6 new note SPA
+
+note over browser:
+On clicking submit button
+browser sends 
+new_note_spa to server
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server->browser: Status Code 201 - Created
+
+note over browser:
+New note displays on page
+No further HTTP requests
+are made and page does not refresh
+end note
